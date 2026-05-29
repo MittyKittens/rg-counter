@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ── App title ─────────────────────────────────────────── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ── Counter display ───────────────────────────────────── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COUNTS"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtCountTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total flips:  0"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+        <TextView
+            android:id="@+id/txtCountOpens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hinge opens:  0"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtCountCloses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hinge closes: 0"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ── Control buttons ───────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnStartStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_start_watcher"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="@string/btn_reset" />
+        </LinearLayout>
+
+        <!-- ── Status section ────────────────────────────────────── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtShizukuInstalled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Shizuku installed: —" />
+
+        <TextView
+            android:id="@+id/txtShizukuRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Shizuku running:   —" />
+
+        <TextView
+            android:id="@+id/txtPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Permission:        —" />
+
+        <TextView
+            android:id="@+id/txtWatching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Watcher active:    —" />
+
+        <TextView
+            android:id="@+id/txtLastEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:layout_marginTop="8dp"
+            android:text="Last event: —" />
+
+    </LinearLayout>
+</ScrollView>
