@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RG Counter</string>
+    <string name="subtitle">Counts hinge open/close flips on the Anbernic RG Rotate</string>
+    <string name="btn_start_watcher">Start watcher</string>
+    <string name="btn_stop_watcher">Stop watcher</string>
+    <string name="btn_reset">Reset</string>
+</resources>
